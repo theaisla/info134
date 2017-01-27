@@ -6,8 +6,16 @@ html, body{
 
 #wrapper{
 	margin:auto;
-	width: 50%;
 	max-width: 1000px;
 	display: block;
-	padding:10em;
+	padding:1em;
+}
+
+img{
+	height: 15em;
+}
+
+.handling{
+	outline-style: dotted;
+	padding:1em;
 }
