@@ -1,0 +1,289 @@
+body, html {
+	height: 100%;
+	margin: 0;
+/*	overflow: hidden;*/
+
+  background: url(img/seats.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*_____________Fonts_____________*/
+
+h1 {
+	font-family: Lato, Helvetica Neue, Helvetica, Arial;
+	font-size: 1.5em;
+	letter-spacing: 1.6px;
+	font-weight: 600;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.underline {
+	width: 30px;
+	border-bottom: 4px solid black;
+	margin: -35px auto 15px auto;
+}
+
+p {
+	font-family: Lato, Helvetica Neue, Helvetica, Arial;
+	font-size: 0.7em;
+	font-weight: 300;
+	line-height: 1.8em;
+}
+
+/*_____________Body_____________
+
+#containermain {
+	width: 450px;
+	padding: 25px 0px 30px 0px;
+	text-align: center;
+	background-color: white;
+	opacity: .7;
+	z-index: 2;
+	border-radius: 3px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	bottom: auto;
+	right: auto;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+
+.cd-fixed-bg {
+	position: relative;
+	min-height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: 1;
+}
+
+.cd-fixed-bg.cd-bg-1 {
+	background-image: url("img/seats.jpg");
+}
+
+input {
+	border: 1px solid #acacaa;
+	border-radius: 2px;
+	height: 20px;
+}
+
+.textarea {
+	margin-top: -50px;
+
+}
+
+#button{
+	height: 25px;
+	width: 60px;
+	margin-top: 20px;
+}
+
+
+/*_____________Footer_____________*/
+
+
+footer {
+	width: 100%;
+	position: relative;
+	z-index: 3;
+	top: -50px;
+}
+.container{
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+}
+
+#footertext {
+	width: 250px;
+	display: inline;
+	color: #acacaa;
+	font-family: Lato, Helvetica Neue, Helvetica, Arial;
+	font-size: 0.6em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 40px;
+}
+
+#iconwrap {
+	position: relative;
+	top: -45px;
+}
+
+.icon {
+	height: 22px;
+	width: auto;
+	padding: 10px 0 0 10px;
+	display: inline;
+	float: right;
+}
+
+.iconhover{
+	height: 22px;
+	width: auto;
+	padding: 10px 0 0 10px;
+	display: inline;
+	float: right;
+	display: none;
+}
+
+.dellik:hover img[class=icon]{
+	display: none;
+}
+
+.dellik:hover img[class=iconhover]{
+	display: inline;
+}
+
+/* ______________________________ Responsive ________________________________________ */
+
+ @media only screen and (max-width: 975px) {
+
+/*_____________Main Navigation_____________*/
+
+ #menyikon {
+	display: inline-block;
+	border-bottom: 15px double #acacaa;
+    border-top: 5px solid #acacaa;
+    content:"";
+    height: 5px;
+    width: 35px;
+	margin-top: 5px;
+	z-index: 10;
+ }
+
+ nav ul {
+	display: none;
+	padding: 10px;
+	background: white;
+	border: 1px solid #acacaa;
+	border-radius: 6px;
+	width: 100px;
+	height: 165px;
+	z-index: 100;
+	position: fixed;
+	right: 6%;
+	top: 20px;
+ }
+
+ nav li {
+	text-align: center;
+	width: 100px;
+	padding: 10px 0;
+	margin: 0;
+	position: relative;
+	z-index: 10000;
+ }
+
+ nav:hover ul, nav ul:hover {
+	display: block;
+ }
+
+}
+
+/* ______________________________________ Medium screen _________________________________________*/
+
+
+ @media only screen and (max-width: 975px) and (min-width: 600px){
+
+}
+
+/* ______________________________________ Small screen _________________________________________*/
+
+@media only screen and (max-width: 600px) and (min-width: 410px){
+
+/*_____________Body_____________*/
+
+#containermain {
+	width: 400px;
+	padding: 25px 0px 25px 0px;
+	top: 45%;
+}
+
+
+/*_____________Footer_____________*/
+
+
+footer {
+	width: 100%;
+	position: relative;
+	z-index: 3;
+	top: -75px;
+}
+
+.container{
+	width: 170px;
+}
+
+#iconwrap {
+	top: -14px;
+	left: -14px;
+}
+
+
+}
+
+/* ______________________________________ Smallest screen _________________________________________*/
+
+@media only screen and (max-width: 410px){
+
+/*_____________Fonts_____________*/
+
+h1 {
+	font-family: Lato, Helvetica Neue, Helvetica, Arial;
+	font-size: 1.1em;
+	letter-spacing: 1.6px;
+	font-weight: 600;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.underline {
+	width: 30px;
+	border-bottom: 3px solid black;
+	margin: -25px auto 15px auto;
+}
+
+p {
+	text-align: center;
+}
+
+/*_____________Body_____________*/
+
+#containermain {
+	width: 200px;
+	padding: 20px 0px 20px 0px;
+	top: 45%;
+}
+
+
+/*_____________Footer_____________*/
+
+
+footer {
+	width: 100%;
+	position: relative;
+	z-index: 3;
+	top: -75px;
+}
+
+.container{
+	width: 170px;
+}
+
+#iconwrap {
+	top: -14px;
+	left: -14px;
+}
+
+
+}
