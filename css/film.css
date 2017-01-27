@@ -1,0 +1,13 @@
+html, body{
+	background-color:#fff;
+	margin: 0;
+	font-size:100%;
+}
+
+#wrapper{
+	margin:auto;
+	width: 50%;
+	max-width: 1000px;
+	display: block;
+	padding:10em;
+}
