@@ -2,20 +2,65 @@ html, body{
 	background-color:#fff;
 	margin: 0;
 	font-size:100%;
-}
+		background: url(../img/redseats.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	}
 
 #wrapper{
 	margin:auto;
 	max-width: 1000px;
 	display: block;
 	padding:1em;
-}
-
-img{
-	height: 15em;
+	background-color:#fff;
 }
 
 .handling{
 	outline-style: dotted;
 	padding:1em;
+}
+
+img{height:15em;}
+
+/* ______________________________ Responsive meny ________________________________________ */
+
+ @media only screen and (max-width: 975px) {
+ }
+
+/* ______________________________________ Medium screen _________________________________________*/
+
+
+ @media only screen and (max-width: 975px) and (min-width: 600px){
+	 #wrapper{
+		background-color:blue;
+		width:60%;
+}
+
+.images img{width:30%;
+height: 11em;}
+
+ }
+/* ______________________________________ Small screen _________________________________________*/
+
+@media only screen and (max-width: 600px) and (min-width: 410px){
+		 #wrapper{
+	width:80%;
+		background-color:grey;
+}
+
+.images img{width:30%;
+height: 9em;}
+}
+
+/* ______________________________________ Smallest screen _________________________________________*/
+
+@media only screen and (max-width: 410px){
+	 #wrapper{
+		width:70%;
+		background-color:pink;
+}
+.images img{width:30%;
+height: 7em;}
 }
