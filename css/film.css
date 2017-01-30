@@ -2,11 +2,15 @@ html, body{
 	background-color:#fff;
 	margin: 0;
 	font-size:100%;
-		background: url(../img/redseats.jpg) no-repeat center center fixed; 
+/*		background: url(../img/redseats.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
+	}
+	
+	h1,h3{
+		background-color:red;
 	}
 
 #wrapper{
@@ -14,7 +18,8 @@ html, body{
 	max-width: 1000px;
 	display: block;
 	padding:1em;
-	background-color:#fff;
+	width: 70%;
+	background-color:#dee1e5;
 }
 
 .handling{
@@ -22,8 +27,7 @@ html, body{
 	padding:1em;
 }
 
-img{height:15em;}
-
+img{height:10em;}
 /* ______________________________ Responsive meny ________________________________________ */
 
  @media only screen and (max-width: 975px) {
@@ -38,8 +42,8 @@ img{height:15em;}
 		width:60%;
 }
 
-.images img{width:30%;
-height: 11em;}
+
+img{height: 7em;}
 
  }
 /* ______________________________________ Small screen _________________________________________*/
@@ -50,8 +54,7 @@ height: 11em;}
 		background-color:grey;
 }
 
-.images img{width:30%;
-height: 9em;}
+img{height: 5em;}
 }
 
 /* ______________________________________ Smallest screen _________________________________________*/
@@ -61,6 +64,7 @@ height: 9em;}
 		width:70%;
 		background-color:pink;
 }
-.images img{width:30%;
-height: 7em;}
+.images{width:30%;
+}
+img{height: 3em;}
 }
