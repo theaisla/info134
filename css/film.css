@@ -138,7 +138,7 @@ header h1 {
 
 #wrapper{
 	color: #565655;
-		margin:auto;
+	margin:auto;
 	max-width: 1000px;
 	display: flex;
 	flex-direction: column; /*| row-reverse | row | column-reverse;*/
@@ -154,6 +154,44 @@ box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.46);
 
 h1{
 		text-align: center;
+}
+/*---------------------rating-------------------------*/
+.rate {
+  float: right;
+  height: 3em;
+  padding: 0.5em;
+  margin:1em;
+}
+
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #dbdbdb;
+}
+
+.rate:not(:checked) > label:before { content: '★ '; }
+
+.rate > input:checked ~ label { color: #fff200; } /*når valgt*/
+
+.rate:not(:checked) > label:hover, .rate:not(:checked) > label:hover ~ label { color: #fff652; } /*når hover over*/
+
+.rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label { color: #fff98a; } /*når går over de som  allerede er valgt*/
+
+#wrapper a{
+	color:#53749d;
+}
+
+#wrapper a:hover{
+	text-decoration: underline;
 }
 #wrapper p{
 	 margin: 0.5em;
