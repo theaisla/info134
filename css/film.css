@@ -59,7 +59,7 @@ li {
 }
 
 /* selve teksten "søk" i søkefeltet*/
-input[type="text"] {
+#headercontainer input[type="text"] {
   height: 30px;
   display: inline-flex;
   font-family: Lato, Helvetica Neue, Helvetica, Arial;
@@ -83,11 +83,11 @@ input[type="text"] {
   cursor: pointer;
 }
 
-input[type="text"]:focus:hover {
+#headercontainer input[type="text"]:focus:hover {
   border-bottom: 1px solid #BBB;
 }
 
-input[type="text"]:focus {
+#headercontainer input[type="text"]:focus {
   width: 120px;
   z-index: 1;
   border-bottom: 1px solid #BBB;
@@ -95,7 +95,7 @@ input[type="text"]:focus {
 }
 
 /* søkebildet */
-input[type="submit"] {
+#headercontainer input[type="submit"] {
   height: 30px;
   width: 30px;
   /*display: inline-flex;*/
@@ -115,7 +115,7 @@ input[type="submit"] {
   transition: opacity .4s ease;
 }
 
-input[type="submit"]:hover {
+#headercontainer input[type="submit"]:hover {
   opacity: 0.8;
 }
 
@@ -155,6 +155,16 @@ box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.46);
 h1{
 		text-align: center;
 }
+/*---------------------post-------------------------*/
+#anmeldelse{
+	display: flex;
+	width:100%;
+}
+#comment{
+	width:100%;
+}
+
+
 /*---------------------rating-------------------------*/
 .rate {
   float: right;
