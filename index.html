@@ -19,7 +19,14 @@
 
 	<body>
 		<header>
-			<div id="headercontainer">
+		<!-- 	<div id="headerimgdiv">
+				<img src="img/camera3.jpg" id="headerimg" alt="Picture of old cameras">
+			</div>-->
+
+				<!-- this div creates a white background behind the navigation -->
+				<div id="headerbackground">
+				</div>
+
 				<a href="index.html ">
 					<img src="img/logo/logohere.png" id="logo" alt="Logo">
 				</a>
@@ -29,16 +36,20 @@
 						<li><a href="index.html#blagjennom" class="active" id="browse">Bla Gjennom</a></li>
 						<li>
 
-  							<form action="" autocomplete="on">
+  						<!--	<form action="" autocomplete="on">
   								<input id="search" name="search" type="text" placeholder="Søk">
-									<input id="search_submit" value="Rechercher" type="submit">
-  							</form>
+									<input id="search_submit" value="Søk" type="submit">
+  							</form>-->
+
+								<form method="get" action="/search" id="search">
+  								<input name="q" type="text" size="40" placeholder="Søk..." />
+								</form>
 
 						</li>
 						<li><a href="index.html#minside" id="minside">Min Side</a></li>
 					</ul>
 				</nav>
-			</div>
+
 		</header>
 
 
