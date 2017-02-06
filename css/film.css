@@ -1,43 +1,55 @@
 body, html {
-	height: 100%;
 	margin: 0;
+  width: 100%;
 }
 
 /*_____________Main Navigation_____________*/
 
-header {
-	width: 100%;
+/*#headerimgdiv {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  position: absolute;
+  top: -250px;
+  background-color: white;
+  opacity: 0.3;
 }
+
+#headerimg {
+  width: 100%;
+}*/
 
 #headerbackground {
 	background-color: white;
-	height: 40px;
+  opacity: 0.3;
+	height: 65px;
 	width: 100%;
 	position: fixed;
-	top: 0px;
-	z-index: 1;
+  top: 0px;
+	z-index: 2;
 }
 
 nav {
 	font-family: Lato, Helvetica Neue, Helvetica, Arial;
 	font-size: 0.9em;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	font-weight: 300;
 	letter-spacing: 0.2em;
 	right: 10%;
-	top: 5px;
+	top: 10px;
 	position: fixed;
 	z-index: 3;
 }
 
 #logo {
-	width: 200px;
+	width: 110px;
+  padding: 5 5 5 5;
 	height: auto;
 	border: 0px;
 	left: 10%;
 	position: fixed;
 	top: 5px;
-	z-index: 3;
+	z-index: 4;
 }
 
 a {
@@ -45,7 +57,12 @@ a {
 	color: #acacaa;
 }
 a:hover {
-	color: #9ac0ae;
+	color: red;
+}
+
+/* fjerner blå outline fra lenker i chrome */
+a:focus {
+  outline:0;
 }
 
 ul {
@@ -58,10 +75,42 @@ li {
 	padding-left: 35px;
 }
 
-/* selve teksten "søk" i søkefeltet*/
-#headercontainer input[type="text"] {
+/* code inspired by http://www.bloggermint.com/2011/06/css3-search-box-inspired-by-apple-com/ */
+#search input[type="text"] {
+    font-family: Lato, Helvetica Neue, Helvetica, Arial;
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    position: relative;
+    top: -3px;
+
+    border: 1px solid #d1d1d1;
+    color: #bebebe;
+    width: 100px;
+    padding: 3px 10px 3px 15px;
+
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    }
+
+#search input[type="text"]:focus {
+    width: 200px;
+    outline: 0;
+    border: 1px solid red;
+    }
+
+/* selve teksten "søk" i søkefeltet
+input[type="text"] {
   height: 30px;
-  display: inline-flex;
+  display: inline-block;
   font-family: Lato, Helvetica Neue, Helvetica, Arial;
 	font-size: 0.9em;
 	text-transform: uppercase;
@@ -83,22 +132,21 @@ li {
   cursor: pointer;
 }
 
-#headercontainer input[type="text"]:focus:hover {
+input[type="text"]:focus:hover {
   border-bottom: 1px solid #BBB;
 }
 
-#headercontainer input[type="text"]:focus {
+input[type="text"]:focus {
   width: 120px;
   z-index: 1;
   border-bottom: 1px solid #BBB;
   cursor: text;
 }
 
-/* søkebildet */
-#headercontainer input[type="submit"] {
+/* søkebildet
+input[type="submit"] {
   height: 30px;
   width: 30px;
-  /*display: inline-flex;*/
   color:red;
   float: right;
 
@@ -115,25 +163,30 @@ li {
   transition: opacity .4s ease;
 }
 
-#headercontainer input[type="submit"]:hover {
+input[type="submit"]:hover {
   opacity: 0.8;
-}
+}*/
 
 
 /*_____________Fonts_____________*/
 
-header h1 {
+h1 {
 	font-family: Lato, Helvetica Neue, Helvetica, Arial;
 	font-size: 3.3em;
 	font-weight: 300;
 	letter-spacing: 1.8px;
 	color: #acacaa;
 	text-transform: uppercase;
-	text-align: center;
-	position: relative;
-	z-index: 5;
-	top: 150px;
+		text-align: center;
 }
+
+p {
+  font-family: Lato, Helvetica Neue, Helvetica, Arial;
+	font-size: 0.8em;
+	color: black;
+}
+
+/*_____________Main section_____________*/
 
 
 #wrapper{
@@ -152,9 +205,6 @@ header h1 {
 box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.46);
 }
 
-h1{
-		text-align: center;
-}
 /*---------------------post-------------------------*/
 #anmeldelse{
 	display: flex;

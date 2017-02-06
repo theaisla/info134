@@ -7,34 +7,38 @@
 		<title>Filmregister</title>
 
 		<!-- Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300,100' rel='stylesheet' type='text/css'>
 
 		<!-- css code -->
 		<link rel="stylesheet" href="css/film.css">
+
+		<!-- other stuff -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
 	<body> 			
 		<header>
-			<div id="headercontainer">
-				<a href="index.html ">
-					<img src="img/logo/logohere.png" id="logo" alt="Logo">
-				</a>
-				<nav>
-					<a href="#" id="menyikon"></a>
-					<ul>
-						<li><a href="index.html#blagjennom" class="active" id="browse">Bla Gjennom</a></li>
-						<li>
-
-  							<form action="" autocomplete="on">
-  								<input id="search" name="search" type="text" placeholder="Søk">
-									<input id="search_submit" value="Rechercher" type="submit">
-  							</form>
-
-						</li>
-						<li><a href="index.html#minside" id="minside">Min Side</a></li>
-					</ul>
-				</nav>
+			<!-- this div creates a white background behind the navigation -->
+			<div id="headerbackground">
 			</div>
+
+			<a href="index.html ">
+				<img src="img/logo/logo.png" id="logo" alt="Logo">
+			</a>
+
+			<nav>
+				<a href="#" id="menyikon"></a>
+				<ul>
+					<li><a href="index.html#blagjennom" class="active" id="browse">Bla Gjennom</a></li>
+					<li>
+						<form method="get" action="/search" id="search">
+  						<input name="q" type="text" size="40" placeholder="Søk..." />
+						</form>
+				</li>
+				<li><a href="index.html#minside" id="minside">Min Side</a></li>
+				</ul>
+			</nav>
 		</header>
 		
 			<section id=wrapper>
