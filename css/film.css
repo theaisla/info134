@@ -205,6 +205,11 @@ h1{
 }
 img{height:10em;
 }
+
+iframe{
+	margin: auto;
+	padding:1em;
+}
 /* ______________________________ Responsive meny ________________________________________ */
 
  @media only screen and (max-width: 975px) {
