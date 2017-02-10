@@ -240,7 +240,7 @@ box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.46);
 
 .rate:not(:checked) > label:before { content: '★ '; }
 
-.rate > input:checked ~ label { color: #fff200; } /*når valgt*/
+.rate > input:checked ~ label { color: red; } /*når valgt*/
 
 .rate:not(:checked) > label:hover, .rate:not(:checked) > label:hover ~ label { color: #fff652; } /*når hover over*/
 
