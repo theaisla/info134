@@ -242,7 +242,7 @@ box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.46);
 
 .rate > input:checked ~ label { color: red; } /*når valgt*/
 
-.rate:not(:checked) > label:hover, .rate:not(:checked) > label:hover ~ label { color: #fff652; } /*når hover over*/
+.rate:not(:checked) > label:hover, .rate:not(:checked) > label:hover ~ label { color: #E01515; } /*når hover over*/
 
 .rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label { color: #fff98a; } /*når går over de som  allerede er valgt*/
 
