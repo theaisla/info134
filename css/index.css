@@ -46,11 +46,21 @@ h3 {
   margin: 10px auto 10px auto;
 }
 
+h4 {
+	font-family: Lato, Helvetica Neue, Helvetica, Arial;
+	font-size: 0.8em;
+	font-weight: 300;
+	letter-spacing: 1.2px;
+	color: #808080;
+  margin: 3 0 0 0;
+  text-align: center;
+}
+
 /*_____________Main Navigation_____________*/
 
 #headerbackground {
 	background-color: white;
-  opacity: 0.9;
+  opacity: 0.93;
 	height: 65px;
 	width: 100%;
 	position: fixed;
@@ -84,13 +94,13 @@ nav {
   z-index: 11;
 }
 
-a {
+nav a {
 	text-decoration: none;
-	color: #53749d;
+	color: #808080;
 }
-a:hover {
+nav a:hover {
 	color: red;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* fjerner blå outline fra lenker i chrome */
@@ -154,37 +164,15 @@ li {
   /*border: 1px solid pink;*/
 }
 
-/*_____________Mindre sections_____________*/
 
-
-#avansertSok{
-  width: 60%;
-  float: left;
-  margin-top: 20px;
-  border: 1px solid red;
+a {
+	text-decoration: none;
+	color: #53749d;
 }
-
-#sistTilgjengeligjort {
-  width: 37%;
-  float: right;
-  margin-top: 20px;
-  border: 1px solid red;
+a:hover {
+	color: red;
+  text-decoration: underline;
 }
-
-#sistLante{
-  width: 37%;
-  float: right;
-  margin-top: 20px;
-  border: 1px solid red;
-}
-
-#rutiner{
-  width: 60%;
-  float: left;
-  margin-top: 20px;
-  border: 1px solid red;
-}
-
 
 
 /*_____________Hover effect on movie images_____________*/
@@ -286,4 +274,48 @@ li {
   filter: alpha(opacity=100);
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+}
+
+/*_____________Mindre sections_____________*/
+
+
+#avansertSok{
+  width: 60%;
+  float: left;
+  margin-top: 20px;
+  border: 1px solid red;
+}
+
+#rutiner{
+  width: 60%;
+  float: left;
+  margin-top: 20px;
+  border: 1px solid red;
+}
+
+#sistTilgjengeligjort {
+  width: 37%;
+  float: right;
+  margin-top: 20px;
+  border: 1px solid red;
+}
+
+#sistLante{
+  width: 37%;
+  float: right;
+  margin-top: 20px;
+  border: 1px solid red;
+}
+
+.img-small{
+  width: 100px;
+  height: auto;
+  margin: 2%;
+  display: inline-block;
+}
+
+.litenfilm {
+  border: 1px solid red;
+  display: inline-block;
+  margin: 8;
 }
