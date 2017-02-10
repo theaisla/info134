@@ -86,10 +86,11 @@ nav {
 
 a {
 	text-decoration: none;
-	color: #808080;
+	color: #53749d;
 }
 a:hover {
 	color: red;
+  text-decoration: underline;
 }
 
 /* fjerner blå outline fra lenker i chrome */
