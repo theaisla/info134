@@ -130,7 +130,7 @@ p {
 #minliste{
 font-style: italic;
 font-size: 0.8em;
-border: 1px solid red;
+border: 0.2em solid red;
 display: table;
 margin: 1em;
 padding:1em;
@@ -217,7 +217,7 @@ box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.46);
 .images{
 	margin: auto;
 }
-img{height:10em;
+img{height:15em;
 }
 
 iframe{
