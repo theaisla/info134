@@ -56,6 +56,15 @@ h4 {
   text-align: center;
 }
 
+h5 {
+	font-family: Lato, Helvetica Neue, Helvetica, Arial;
+	font-size: 0.9em;
+	font-weight: 400;
+	letter-spacing: 1.2px;
+	color: #808080;
+  margin: 3 0 3 3;
+}
+
 /*_____________Main Navigation_____________*/
 
 #headerbackground {
@@ -282,29 +291,25 @@ a:hover {
 #avansertSok{
   width: 60%;
   float: left;
-  margin-top: 20px;
-  border: 1px solid red;
+  margin: 20 0 20 0;
 }
 
 #rutiner{
   width: 60%;
   float: left;
-  margin-top: 20px;
-  border: 1px solid red;
+  margin: 20 0 20 0;
 }
 
 #sistTilgjengeligjort {
   width: 37%;
   float: right;
-  margin-top: 20px;
-  border: 1px solid red;
+  margin: 20 0 20 0;
 }
 
 #sistLante{
   width: 37%;
   float: right;
-  margin-top: 20px;
-  border: 1px solid red;
+  margin: 20 0 20 0;
 }
 
 .img-small{
@@ -315,7 +320,6 @@ a:hover {
 }
 
 .litenfilm {
-  border: 1px solid red;
   display: inline-block;
   margin: 8;
 }
@@ -323,6 +327,5 @@ a:hover {
 .mid{
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid blue;
   width:250px;
 }

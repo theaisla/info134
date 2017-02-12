@@ -163,6 +163,85 @@
 			<section id="avansertSok">
 				<h3>Avansert søk</h3>
 				<div class="underline"></div>
+
+
+				<p>Skriv inn hele eller deler av det eller de ordene du vil søke etter.
+					Du kan også begrense søket ved å velge type og/eller format. </p>
+
+				<form method="get" action="resultater.html" id="search2">
+				  <input type="hidden" name="action" value="list">
+				  <select name="f_type" title="Type">
+				    <option value="" class="postsep">Alle</option>
+				  	<option value="v">Film</option> <option value="h">Hørespill</option> <option value="s">Spill</option>
+				  </select>
+
+				  <select name="f_format" title="Format">
+				    <option value="" class="postsep">Alle formater</option>
+				  	<option value="cd-rom">cd-rom</option> <option value="dvd-video">dvd-video</option> <option value="online">online</option>
+						<option value="playstation2">playstation2</option> <option value="vhs">vhs</option>
+				  </select>
+					<br>
+					<br>
+				<!--  <input type="submit" value="Søk">
+				</form>
+
+    		<form method="get" action="resultater.html" id="search3"> -->
+      		<input type="hidden" name="action" value="list">
+      		<select name="f_genre" onchange="this.form.submit()">
+        		<option class="postsep">Genre:</option>
+  					<option value="biografi">Biografi</option> <option value="drama">Drama</option>
+						<option value="komedie">Komedie</option> <option value="romanse">Romanse</option>
+					</select>
+
+					<select name="f_country" onchange="this.form.submit()">
+        		<option class="postsep"> Land:</option>
+  					<option value="IND">IND</option><option value="FRA">FRA</option>
+					</select>
+
+					<select name="f_folk" onchange="this.form.submit()">
+        		<option class="postsep">Regissører:</option>
+  					<option value="Olivier Nakache">Olivier Nakache</option> <option value="Eric Toledano">Eric Toledano</option> <option value="Ritesh Batra">Ritesh Batra</option>
+					</select>
+					<input type="submit" value="Søk">
+				</form>
+
+			</section>
+
+			<!-- siste tilgjengeliggjorte filmer -->
+			<section id="sistTilgjengeligjort">
+				<h3>Siste tilgjengeliggjorte filmer</h3>
+				<div class="underline"></div>
+
+				<section class="mid">
+
+					<section class="litenfilm">
+						<a href="film1.html">
+							<img class="img-small" src="img/MinorityReport.jpg" alt="Minority Report movie cover">
+						</a>
+						<h4>Minority Report</h4>
+					</section>
+
+					<section class="litenfilm">
+						<a href="film1.html">
+							<img class="img-small" src="img/HolyGrail.jpg" alt="The Holy Grail movie cover">
+						</a>
+						<h4>The Holy Grail</h4>
+					</section>
+
+					<section class="litenfilm">
+						<a href="film2.html">
+							<img class="img-small" src="img/TheLunchbox.jpg" alt="The Lunchbox movie cover">
+						</a>
+						<h4>The Lunchbox</h4>
+					</section>
+
+					<section class="litenfilm">
+						<a href="film1.html">
+							<img class="img-small" src="img/TheIntouchables.jpg" alt="The Intouchables movie cover">
+						</a>
+						<h4>Intouchables</h4>
+					</section>
+				</section>
 			</section>
 
 			<!-- rutiner for lån -->
@@ -188,61 +267,47 @@
 				</p>
 			</section>
 
-			<!-- siste tilgjengeliggjorte filmer -->
-			<section id="sistTilgjengeligjort">
-				<h3>Siste tilgjengeliggjorte filmer</h3>
-				<div class="underline"></div>
-
-				<section class="mid">
-
-				<section class="litenfilm">
-					<a href="film1.html">
-						<img class="img-small" src="img/MinorityReport.jpg" alt="Minority Report movie cover">
-					</a>
-					<h4>Minority Report</h4>
-				</section>
-
-				<section class="litenfilm">
-					<a href="film1.html">
-						<img class="img-small" src="img/HolyGrail.jpg" alt="The Holy Grail movie cover">
-					</a>
-					<h4>The Holy Grail</h4>
-				</section>
-
-				<section class="litenfilm">
-					<a href="film2.html">
-						<img class="img-small" src="img/TheLunchbox.jpg" alt="The Lunchbox movie cover">
-					</a>
-					<h4>The Lunchbox</h4>
-				</section>
-
-				<section class="litenfilm">
-					<a href="film1.html">
-						<img class="img-small" src="img/TheIntouchables.jpg" alt="The Intouchables movie cover">
-					</a>
-					<h4>Intouchables</h4>
-				</section>
-
-			</section>
-
-
-			</section>
-
 			<!-- siste lånte -->
 			<section id="sistLante">
 				<h3>Siste lånte</h3>
 				<div class="underline"></div>
+
+				<section class="mid">
+
+					<section class="litenfilm">
+						<a href="film1.html">
+							<img class="img-small" src="img/MinorityReport.jpg" alt="Minority Report movie cover">
+						</a>
+						<h4>Minority Report</h4>
+					</section>
+
+					<section class="litenfilm">
+						<a href="film1.html">
+							<img class="img-small" src="img/HolyGrail.jpg" alt="The Holy Grail movie cover">
+						</a>
+						<h4>The Holy Grail</h4>
+					</section>
+
+					<section class="litenfilm">
+						<a href="film2.html">
+							<img class="img-small" src="img/TheLunchbox.jpg" alt="The Lunchbox movie cover">
+						</a>
+						<h4>The Lunchbox</h4>
+					</section>
+
+					<section class="litenfilm">
+						<a href="film1.html">
+							<img class="img-small" src="img/TheIntouchables.jpg" alt="The Intouchables movie cover">
+						</a>
+						<h4>Intouchables</h4>
+					</section>
+
+				</section>
+
 			</section>
-
-
 
 		<!-- slutt på mainsection -->
 		</section>
-
-
-
-
-
 
   </body>
 
