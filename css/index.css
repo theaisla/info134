@@ -52,7 +52,7 @@ h4 {
 	font-weight: 300;
 	letter-spacing: 1.2px;
 	color: #808080;
-  margin: 3 0 0 0;
+  margin: 0 0 0 0;
   text-align: center;
 }
 
@@ -117,17 +117,6 @@ a:focus {
   outline:0;
 }
 
-ul {
-	list-style: none;
-	padding: 0px;
-}
-
-li {
-	float: right;
-	padding-left: 35px;
-  padding-top: 5px;
-}
-
 /* kode inspirert fra http://www.bloggermint.com/2011/06/css3-search-box-inspired-by-apple-com/ */
 #search input[type="text"] {
     font-family: Lato, Helvetica Neue, Helvetica, Arial;
@@ -153,13 +142,53 @@ li {
     -moz-transition: all 0.7s ease 0s;
     -o-transition: all 0.7s ease 0s;
     transition: all 0.7s ease 0s;
-    }
+}
 
 #search input[type="text"]:focus {
     width: 200px;
     outline: 0;
     border: 1px solid red;
-    }
+}
+
+ul {
+	list-style: none;
+	padding: 0px;
+}
+
+li {
+	float: right;
+	padding-left: 35px;
+  padding-top: 5px;
+}
+
+/* dropdown minside */
+.dropdown{
+	float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 23px;
+    background-color: white;
+    min-width: 120px;
+    border: 0.5px solid red;
+    border-radius: 5px;
+    z-index: 20;
+}
+
+/* lenkene i dropdown */
+.dropdown-content a {
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+/* vise alternativer ved hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 /*_____________Hoved section_____________*/
 
@@ -173,7 +202,6 @@ li {
   /*border: 1px solid pink;*/
 }
 
-
 a {
 	text-decoration: none;
 	color: #53749d;
@@ -183,15 +211,25 @@ a:hover {
   text-decoration: underline;
 }
 
+#films {
+  margin-right: auto;
+  margin-left: auto;
+  width: 780px;
+}
+
 
 /*_____________Hover effect on movie images_____________*/
 /* Inspired by miketricking.github.io */
 
+.h22 {
+  display: none;
+}
+
 .movieimg{
-  width: 22%;
+  width: 170px;
   height: auto;
   display: inline-block;
-  margin: 1.3%;
+  margin: 10px;
 }
 
 .hovereffect {
@@ -287,29 +325,37 @@ a:hover {
 
 /*_____________Mindre sections_____________*/
 
+#boks1{
+  height: 415px;
+  padding: 5px;
+}
 
 #avansertSok{
-  width: 60%;
+  width: 45%;
   float: left;
-  margin: 20 0 20 0;
+  margin-left: 3%;
 }
 
 #rutiner{
-  width: 60%;
-  float: left;
-  margin: 20 0 20 0;
+  width: 45%;
+  float: right;
+  margin-right: 3%;
+}
+
+#boks2{
+  height: 450px;
 }
 
 #sistTilgjengeligjort {
-  width: 37%;
-  float: right;
-  margin: 20 0 20 0;
+  width: 45%;
+  float: left;
+  margin-left: 3%;
 }
 
 #sistLante{
-  width: 37%;
+  width: 45%;
   float: right;
-  margin: 20 0 20 0;
+  margin-right: 3%;
 }
 
 .img-small{
@@ -321,11 +367,172 @@ a:hover {
 
 .litenfilm {
   display: inline-block;
-  margin: 8;
+  margin: 8px;
 }
 
 .mid{
+  margin-top: -13px;
   margin-left: auto;
   margin-right: auto;
   width:250px;
+}
+
+/* ______________________________ Responsive meny ________________________________________ */
+
+ @media only screen and (max-width: 1070px) {
+
+   /*_____________Fonts_____________*/
+
+   h2 {
+     font-size: 9px;
+   	font-weight: 400;
+   	letter-spacing: 1.5px;
+   }
+
+   h3 {
+     font-size: 1em;
+   }
+
+   p{
+     font-size: 0.7em;
+   }
+
+   /*_____________ Bilde av filmer store _____________*/
+
+   #films {
+     width: 550px;
+   }
+
+   .movieimg{
+     width: 120px;
+     margin: 6px;
+   }
+
+   .hovereffect .overlay {
+     width: 70%;
+   }
+
+   .hovereffect p{
+     font-size: 9px;
+     font-weight: 300;
+   }
+
+   /*_____________Mindre sections_____________*/
+
+   #boks1{
+     height: 370px;
+     padding: 5px;
+   }
+
+ }
+
+/* ______________________________________ Small screen _________________________________________*/
+
+@media only screen and (max-width: 750px) and (min-width: 410px){
+  #mainsection {
+    width: 90%;
+  }
+
+  /*_____________Fonts_____________*/
+
+  h1{
+    font-size: 1.2em;
+  }
+
+  h2 {
+
+  }
+
+
+  /*_____________ Bilde av filmer store _____________*/
+
+  #films {
+    width: 270px;
+  }
+
+  #film5, #film6, #film7, #film8{
+    display: none;
+  }
+
+
+  /*_____________Mindre sections_____________*/
+
+  #boks1, #boks2{
+    height: auto;
+  }
+
+  #sistLante, #sistTilgjengeligjort, #rutiner, #avansertSok{
+    width: 75%;
+    float: none;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+
+/* ______________________________________ Smallest screen _________________________________________*/
+
+@media only screen and (max-width: 410px){
+
+  #mainsection {
+    width: 90%;
+  }
+
+  #logo {
+  	width: 80px;
+  }
+
+  /*_____________Fonts_____________*/
+
+  h1{
+    font-size: 1.2em;
+  }
+
+  h2{
+    padding-top: 30px;
+  }
+
+
+  /*_____________ Bilde av filmer store _____________*/
+
+  #films {
+    width: 275px;
+  }
+
+  #film4{
+    position: relative;
+    top: -10px;
+  }
+
+  #film5, #film6, #film7, #film8{
+    display: none;
+  }
+
+  .hovereffect {
+    pointer-events:none;
+    margin-bottom: 10px;
+  }
+
+  .h22 {
+    display: block;
+    color: #808080;
+    text-align: center;
+  }
+
+  /*_____________Mindre sections_____________*/
+
+  #boks1, #boks2{
+    height: auto;
+  }
+
+  #sistLante, #sistTilgjengeligjort, #rutiner, #avansertSok{
+    width: 75%;
+    float: none;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
 }

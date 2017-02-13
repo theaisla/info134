@@ -1,3 +1,4 @@
+<!-- <!DOCTYPE html> Måtte ta bort denne fordi noe av koden slutter å fungere. Trenger hjelp til å fikse -->
 <HTML>
 	<head>
 		<meta charset="UTF-8">
@@ -29,7 +30,15 @@
 			</a>
 			<a href="#" id="menyikon"></a>
 				<ul>
-					<li><a href="index.html#minside" id="minside">Min Side</a></li>
+
+					<div class="dropdown">
+						<li><a href="minside.html" id="minside">Min Side</a></li>
+  					<div class="dropdown-content">
+							<a href="minside.html">Min side</a>
+							<a href="login.html">Logg ut</a>
+  					</div>
+					</div>
+
 					<li>
 						<form method="get" action="resultater.html" id="search">
   						<input name="q" type="text" size="40" placeholder="Søk..." />
@@ -45,120 +54,128 @@
 			<h1>Anbefalinger</h1>
 			<div class="underline"></div>
 
+			<section id="films">
 			<!-- Film 1 -->
-			<div class="movieimg">
+			<div class="movieimg" id="film1">
     		<div class="hovereffect">
         	<img class="img-responsive" src="img/TheIntouchables.jpg" alt="The Intouchables movie cover">
           <div class="overlay">
 						<a href="film1.html">
             <h2>Intouchables</h2>
-						<p> Den sanne historien om to menn som aldri skulle ha møtt hverandre -
-								De Urørlige er en oppløftende komedie om vennskap, tillit og menneskelige muligheter.</a>
-						</p>
+						<p > Den sanne historien om to menn som aldri skulle ha møtt hverandre -
+								De Urørlige er en oppløftende komedie om vennskap, tillit og menneskelige muligheter.
+						</p></a>
           </div>
     		</div>
+				<a href="film1.html"><h2 class="h22">Intouchables</h2></a>
 			</div>
 
 			<!-- Film 2 -->
-			<div class="movieimg">
+			<div class="movieimg" id="film2">
     		<div class="hovereffect">
         	<img class="img-responsive" src="img/TheLunchbox.jpg" alt="The Lunchbox movie cover">
           <div class="overlay">
 						<a href="film2.html">
             <h2>The Lunchbox</h2>
 						<p> Indiske The Lunchbox er en sjelden filmperle som har begeistret
-								et stort internasjonalt publikum med sin originalitet og varme. </a>
-						</p>
+								et stort internasjonalt publikum med sin originalitet og varme.
+						</p></a>
           </div>
     		</div>
+				<a href="film2.html"><h2 class="h22">The Lunchbox</h2></a>
 			</div>
 
 			<!-- Film 3 -->
-			<div class="movieimg">
+			<div class="movieimg" id="film3">
     		<div class="hovereffect">
         	<img class="img-responsive" src="img/HolyGrail.jpg" alt="The Holy Grail movie cover">
           <div class="overlay">
+						<a href="film1.html">
             <h2>Monty Python &<br>the Holy Grail</h2>
-						<p>
-							<a href="#">Kong Arthur og hans riddere skal finne Den Hellige Gral.</a>
-						</p>
+						<p>Kong Arthur og hans riddere skal finne Den Hellige Gral.
+						</p></a>
           </div>
     		</div>
+				<a href="film2.html"><h2 class="h22">Monty Python &<br>the Holy Grail</h2></a>
 			</div>
 
 			<!-- Film 4 -->
-			<div class="movieimg">
+			<div class="movieimg" id="film4">
     		<div class="hovereffect">
         	<img class="img-responsive" src="img/MinorityReport.jpg" alt="Minority Report movie cover">
           <div class="overlay">
+						<a href="film1.html">
             <h2>Minority Report</h2>
-						<p>
-							<a href="#">Når lederen for prekriminaliteten blir beskyldt for et fremtidig drap,
-								har han 36 timer på seg til å finne ut hvem som ha pekt han ut, ellers blir han
-								offer for det perfekte systemet han selv har vært med på å skape.</a>
-						</p>
+						<p>Lederen for prekriminaliteten blir beskyldt for et fremtidig drap og må finne ut hvem
+							som ha pekt han ut, ellers blir han et offer selv.
+						</p></a>
           </div>
     		</div>
+				<a href="film2.html"><h2 class="h22">Minority Report</h2></a>
 			</div>
 
 			<!-- Film 5 -->
-			<div class="movieimg">
+			<div class="movieimg" id="film5">
     		<div class="hovereffect">
         	<img class="img-responsive" src="img/TheIntouchables.jpg" alt="The Intouchables movie cover">
           <div class="overlay">
 						<a href="film1.html">
             <h2>Intouchables</h2>
 						<p> Den sanne historien om to menn som aldri skulle ha møtt hverandre -
-								De Urørlige er en oppløftende komedie om vennskap, tillit og menneskelige muligheter.</a>
-						</p>
+								De Urørlige er en oppløftende komedie om vennskap, tillit og menneskelige muligheter.
+						</p></a>
           </div>
     		</div>
 			</div>
 
 			<!-- Film 6 -->
-			<div class="movieimg">
+			<div class="movieimg" id="film6">
     		<div class="hovereffect">
         	<img class="img-responsive" src="img/TheLunchbox.jpg" alt="The Lunchbox movie cover">
           <div class="overlay">
 						<a href="film2.html">
             <h2>The Lunchbox</h2>
 						<p> Indiske The Lunchbox er en sjelden filmperle som har begeistret
-								et stort internasjonalt publikum med sin originalitet og varme. </a>
-						</p>
+								et stort internasjonalt publikum med sin originalitet og varme.
+						</p></a>
           </div>
     		</div>
 			</div>
 
 			<!-- Film 7 -->
-			<div class="movieimg">
+			<div class="movieimg" id="film7">
     		<div class="hovereffect">
         	<img class="img-responsive" src="img/HolyGrail.jpg" alt="The Holy Grail movie cover">
           <div class="overlay">
+						<a href="film1.html">
             <h2>Monty Python and <br>the Holy Grail</h2>
-						<p>
-							<a href="#">Kong Arthur og hans riddere skal finne Den Hellige Gral.</a>
-						</p>
+						<p>Kong Arthur og hans riddere skal finne Den Hellige Gral.
+						</p></a>
           </div>
     		</div>
 			</div>
 
 			<!-- Film 8 -->
-			<div class="movieimg">
+			<div class="movieimg" id="film8">
     		<div class="hovereffect">
         	<img class="img-responsive" src="img/MinorityReport.jpg" alt="Minority Report movie cover">
           <div class="overlay">
+						<a href="film1.html">
             <h2>Minority Report</h2>
-						<p>
-							<a href="#">Når lederen for prekriminaliteten blir beskyldt for et fremtidig drap,
-								har han 36 timer på seg til å finne ut hvem som ha pekt han ut, ellers blir han
-								offer for det perfekte systemet han selv har vært med på å skape.</a>
-						</p>
+						<p>Lederen for prekriminaliteten blir beskyldt for et fremtidig drap og må finne ut hvem
+							som ha pekt han ut, ellers blir han et offer selv.
+						</p></a>
           </div>
     		</div>
 			</div>
 
 			<p><a href="#"> Se flere... </a> </p>
 
+		</section>
+
+
+
+		<section id="boks1">
 			<!-- avansert søt -->
 			<section id="avansertSok">
 				<h3>Avansert søk</h3>
@@ -170,18 +187,18 @@
 
 				<form method="get" action="resultater.html" id="search2">
 				  <input type="hidden" name="action" value="list">
+					<br>
 				  <select name="f_type" title="Type">
 				    <option value="" class="postsep">Alle</option>
 				  	<option value="v">Film</option> <option value="h">Hørespill</option> <option value="s">Spill</option>
-				  </select>
+				  </select><br><br>
 
 				  <select name="f_format" title="Format">
 				    <option value="" class="postsep">Alle formater</option>
 				  	<option value="cd-rom">cd-rom</option> <option value="dvd-video">dvd-video</option> <option value="online">online</option>
 						<option value="playstation2">playstation2</option> <option value="vhs">vhs</option>
-				  </select>
-					<br>
-					<br>
+				  </select><br><br>
+
 				<!--  <input type="submit" value="Søk">
 				</form>
 
@@ -191,22 +208,48 @@
         		<option class="postsep">Genre:</option>
   					<option value="biografi">Biografi</option> <option value="drama">Drama</option>
 						<option value="komedie">Komedie</option> <option value="romanse">Romanse</option>
-					</select>
+					</select><br><br>
 
 					<select name="f_country" onchange="this.form.submit()">
         		<option class="postsep"> Land:</option>
   					<option value="IND">IND</option><option value="FRA">FRA</option>
-					</select>
+					</select><br><br>
 
 					<select name="f_folk" onchange="this.form.submit()">
         		<option class="postsep">Regissører:</option>
   					<option value="Olivier Nakache">Olivier Nakache</option> <option value="Eric Toledano">Eric Toledano</option> <option value="Ritesh Batra">Ritesh Batra</option>
-					</select>
+					</select><br><br>
 					<input type="submit" value="Søk">
 				</form>
 
 			</section>
 
+			<!-- rutiner for lån -->
+			<section id="rutiner">
+				<h3>Rutiner for lån</h3>
+				<div class="underline"></div>
+
+				<p>
+					1. Følgende kan låne: staben ved Institutt for informasjons- og medievitenskap,
+					studenter ved instituttet, på grunnlag av faglig begrunnelse, andre ved UiB etter
+					særlig avtale for et avgrenset tidsrom eller for et avgrenset prosjekt. <br><br>
+
+					2. Bestillinger vil bli effektuert hver arbeidsdag mellom klokken 14:00 og 15:00. <br><br>
+
+					3. Ansatte ved instituttet får filmen lagt i posthyllen, studenter og andre får
+					tilbakemelding om hvor og når filmen kan hentes. <br><br>
+
+					4. For alt utlån gjelder en generell regel om lånetid på 1 uke, som kan forlenges
+					med ytterligere en uke. Ønskes en film lånt over en lengre periode må dette begrunnes,
+					og hver enkelt forespørsel vil bli vurdert. <br><br>
+
+					5. Film skal leveres tilbake i posthyllen merket retur av film.
+				</p>
+			</section>
+
+		</section>
+
+		<section id="boks2">
 			<!-- siste tilgjengeliggjorte filmer -->
 			<section id="sistTilgjengeligjort">
 				<h3>Siste tilgjengeliggjorte filmer</h3>
@@ -242,29 +285,6 @@
 						<h4>Intouchables</h4>
 					</section>
 				</section>
-			</section>
-
-			<!-- rutiner for lån -->
-			<section id="rutiner">
-				<h3>Rutiner for lån</h3>
-				<div class="underline"></div>
-
-				<p>
-					1. Følgende kan låne: staben ved Institutt for informasjons- og medievitenskap,
-					studenter ved instituttet, på grunnlag av faglig begrunnelse, andre ved UiB etter
-					særlig avtale for et avgrenset tidsrom eller for et avgrenset prosjekt. <br><br>
-
-					2. Bestillinger vil bli effektuert hver arbeidsdag mellom klokken 14:00 og 15:00. <br><br>
-
-					3. Ansatte ved instituttet får filmen lagt i posthyllen, studenter og andre får
-					tilbakemelding om hvor og når filmen kan hentes. <br><br>
-
-					4. For alt utlån gjelder en generell regel om lånetid på 1 uke, som kan forlenges
-					med ytterligere en uke. Ønskes en film lånt over en lengre periode må dette begrunnes,
-					og hver enkelt forespørsel vil bli vurdert. <br><br>
-
-					5. Film skal leveres tilbake i posthyllen merket retur av film.
-				</p>
 			</section>
 
 			<!-- siste lånte -->
@@ -305,6 +325,8 @@
 				</section>
 
 			</section>
+
+		</section>
 
 		<!-- slutt på mainsection -->
 		</section>
