@@ -3,38 +3,6 @@ body, html {
 	width: 100%;
 }
 
-#headerbackground {
-	background-color: white;
-	opacity: 0.3;
-	height: 65px;
-	width: 100%;
-	position: fixed;
-	top: 0px;
-	z-index: 2;
-}
-
-nav {
-	font-family: Lato, Helvetica Neue, Helvetica, Arial;
-	font-size: 0.9em;
-	font-weight: 300;
-	letter-spacing: 0.2em;
-	right: 10%;
-	top: 10px;
-	position: fixed;
-	z-index: 3;
-}
-
-#logo {
-	width: 110px;
-	padding: 5 5 5 5;
-	height: auto;
-	border: 0px;
-	left: 10%;
-	position: fixed;
-	top: 5px;
-	z-index: 4;
-}
-
 /*_____________Fonts_____________*/
 
 h1 {
@@ -83,15 +51,19 @@ a:focus {
 	outline:0;
 }
 
-ul {
+/* breadbrumb liste */
+.breadcrumb {
 	list-style: none;
 	padding: 0px;
 }
 
-li {
+.breadcrumb li {
 	float: left;
 	padding-left: 35px;
 }
+
+/*_____________ Navigasjon _____________*/
+
 #headerbackground {
 	background-color: white;
   opacity: 0.93;
@@ -175,10 +147,15 @@ a:focus {
     border: 1px solid red;
 }
 
-nav li {
-	float: left;
+ul {
+	list-style: none;
+	padding: 0px;
+}
+
+li {
+	float: right;
 	padding-left: 35px;
-	padding-top: 5px;
+  padding-top: 5px;
 }
 
 /* dropdown minside */
@@ -208,6 +185,7 @@ nav li {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 
 /*_____________Main section_____________*/
 
@@ -407,4 +385,3 @@ iframe{
 
 
 }
-
