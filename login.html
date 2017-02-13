@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <HTML>
 	<head>
-		<meta charset="UTF-8">
+	<meta charset="UTF-8">
 
-		<title>Filmregister</title>
+	<title>Filmregister</title>
 
-		<!-- Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
-		<!-- css code -->
-		<link rel="stylesheet" href="css/login.css">
+	<!-- css code -->
+	<link rel="stylesheet" href="css/login.css">
 	</head>
 
 
 	<body>
+<<<<<<< HEAD
 
     <section id="containermain">
 
@@ -32,4 +33,28 @@
     </section>
   </body>
 
+=======
+		<section id="containermain">
+
+			<h1>Login</h1>
+			<div class="underline"></div>
+
+			<p>Welcome to the login page</p>
+
+			<!-- Login Form -->
+			<form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST" name="login">
+				<p>Email:</p><input type="text" name="user" class="textarea" />
+				<p>Password:</p><input type="password" name="pass" class="textarea" />
+				<br />
+				<input type="submit" value="Log in" id="button" />
+			</form>
+		</section>
+	</body>
+  
+  
+	<footer>
+		<p>&copy; <p>
+	</footer>
+	</body>
+>>>>>>> origin/master
 </HTML>
