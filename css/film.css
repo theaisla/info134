@@ -297,6 +297,7 @@ li {
 iframe{
 	margin: auto;
 	padding:1em;
+	border:0;
 }
 
 /* ______________________________ Responsive meny ________________________________________ */
