@@ -1,22 +1,21 @@
 body, html {
 	margin: 0;
-  width: 100%;
+	width: 100%;
 }
 
 #headerbackground {
 	background-color: white;
-  opacity: 0.3;
+	opacity: 0.3;
 	height: 65px;
 	width: 100%;
 	position: fixed;
-  top: 0px;
+	top: 0px;
 	z-index: 2;
 }
 
 nav {
 	font-family: Lato, Helvetica Neue, Helvetica, Arial;
 	font-size: 0.9em;
-	/*text-transform: uppercase;*/
 	font-weight: 300;
 	letter-spacing: 0.2em;
 	right: 10%;
@@ -27,13 +26,51 @@ nav {
 
 #logo {
 	width: 110px;
-  padding: 5 5 5 5;
+	padding: 5 5 5 5;
 	height: auto;
 	border: 0px;
 	left: 10%;
 	position: fixed;
 	top: 5px;
 	z-index: 4;
+}
+
+/*_____________Fonts_____________*/
+
+h1 {
+font-family: Lato, Helvetica Neue, Helvetica, Arial;
+font-size: 2em;
+font-weight: 300;
+letter-spacing: 1.8px;
+color: #808080;
+text-align: center;
+margin: 2em 0 0 0;
+}
+
+h3 {
+font-family: Lato, Helvetica Neue, Helvetica, Arial;
+font-size: 1.3em;
+font-weight: 300;
+letter-spacing: 1.8px;
+color: #808080;
+}
+
+.underline {
+width: 60px;
+border-bottom: 3px solid red;
+margin: 12px auto 25px auto;
+}
+
+.underlineh3 {
+width: 60px;
+border-bottom: 3px solid red;
+margin-left:0.8em;
+}
+
+p {
+font-family: Lato, Helvetica Neue, Helvetica, Arial;
+font-size: 0.8em;
+color: black;
 }
 
 a {
@@ -43,7 +80,7 @@ a {
 
 /* fjerner blå outline fra lenker i chrome */
 a:focus {
-  outline:0;
+	outline:0;
 }
 
 ul {
@@ -58,141 +95,88 @@ li {
 
 /* code inspired by http://www.bloggermint.com/2011/06/css3-search-box-inspired-by-apple-com/ */
 #search input[type="text"] {
-    font-family: Lato, Helvetica Neue, Helvetica, Arial;
-    font-size: 0.9em;
-    font-weight: 300;
-    letter-spacing: 0.2em;
-    position: relative;
-    top: -3px;
+	font-family: Lato, Helvetica Neue, Helvetica, Arial;
+	font-size: 0.9em;
+	font-weight: 300;
+	letter-spacing: 0.2em;
+	position: relative;
+	top: -3px;
 
-    border: 1px solid #d1d1d1;
-    color: #bebebe;
-    width: 100px;
-    padding: 3px 10px 3px 15px;
+	border: 1px solid #d1d1d1;
+	color: #bebebe;
+	width: 100px;
+	padding: 3px 10px 3px 15px;
 
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
-    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
-    -webkit-transition: all 0.7s ease 0s;
-    -moz-transition: all 0.7s ease 0s;
-    -o-transition: all 0.7s ease 0s;
-    transition: all 0.7s ease 0s;
-    }
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+	-webkit-transition: all 0.7s ease 0s;
+	-moz-transition: all 0.7s ease 0s;
+	-o-transition: all 0.7s ease 0s;
+	transition: all 0.7s ease 0s;
+}
 
 #search input[type="text"]:focus {
-    width: 200px;
-    outline: 0;
-    border: 1px solid red;
-    }
-
-
-/*_____________Fonts_____________*/
-
-h1 {
-	font-family: Lato, Helvetica Neue, Helvetica, Arial;
-	font-size: 2em;
-	font-weight: 300;
-	letter-spacing: 1.8px;
-	color: #808080;
-  text-align: center;
-  margin: 2em 0 0 0;
+	width: 200px;
+	outline: 0;
+	border: 1px solid red;
 }
 
-h3 {
-	font-family: Lato, Helvetica Neue, Helvetica, Arial;
-	font-size: 1.3em;
-	font-weight: 300;
-	letter-spacing: 1.8px;
-	color: #808080;
-}
-
-.underline {
-	width: 60px;
-	border-bottom: 3px solid red;
-	margin: 12px auto 25px auto;
-}
-
-.underlineh3 {
-	width: 60px;
-	border-bottom: 3px solid red;
-	margin-left:0.8em;
-}
-
-p {
-  font-family: Lato, Helvetica Neue, Helvetica, Arial;
-	font-size: 0.8em;
-	color: black;
-}
-
-#minliste{
-font-style: italic;
-font-size: 0.8em;
-border: 0.2em solid red;
-display: table;
-margin: 1em;
-padding:1em;
-float:right;
-margin-left:auto;
-
-}
-
-.breadcrumb{
-	margin-top:4em;
-}
 
 /*_____________Main section_____________*/
 
-
 #wrapper{
-	color: #565655;
-	margin:auto;
-	max-width: 1000px;
-	display: flex;
-	flex-direction: column; /*| row-reverse | row | column-reverse;*/
-	padding:1em;
-	width: 70%;
-	background-color:#f6f6f6;
-				font-family: Lato, Helvetica Neue, Helvetica, Arial;
-	
+color: #565655;
+margin:auto;
+max-width: 1000px;
+display: flex;
+flex-direction: column; /*| row-reverse | row | column-reverse;*/
+padding:1em;
+width: 70%;
+background-color:#f6f6f6;
+font-family: Lato, Helvetica Neue, Helvetica, Arial;
+
 -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.46);
 -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.46);
 box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.46);
 }
 
+
 /*---------------------post-------------------------*/
 #anmeldelse{
-	display: flex;
-	padding: 2em;
+display: flex;
+padding: 2em;
 }
 #comment{
-	width:100%;
+width:100%;
 }
 
 
 /*---------------------rating-------------------------*/
+/* code inspired by http://findnerd.com/list/view/Star-rating-using-pure-css/12096/ */
 .rate {
-  float: right;
-  height: 3em;
-  padding: 0.5em;
-  margin:1em;
+float: right;
+height: 3em;
+padding: 0.5em;
+margin:1em;
 }
 
 .rate:not(:checked) > input {
-  position: absolute;
-  top: -9999px;
+position: absolute;
+top: -9999px;
 }
 
 .rate:not(:checked) > label {
-  float: right;
-  width: 1em;
-  overflow: hidden;
-  white-space: nowrap;
-  cursor: pointer;
-  font-size: 30px;
-  color: #dbdbdb;
+float: right;
+width: 1em;
+overflow: hidden;
+white-space: nowrap;
+cursor: pointer;
+font-size: 30px;
+color: #dbdbdb;
 }
 
 .rate:not(:checked) > label:before { content: '★ '; }
@@ -203,55 +187,77 @@ box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.46);
 
 .rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label { color: #E12323; } /*når går over de som  allerede er valgt*/
 
+
+/*---------------------breadcrumb-------------------------*/
+
+.breadcrumb{
+margin-top:4em;
+background-color:red;
+}
+
+.breadcrumb a, li{
+color: black  !important;
+}
+
+#visited{
+font-style: italic;
+}
+
+#minListe {
+height:5em !important;
+margin-left:auto;
+
+}
+
 #wrapper a{
-	color:#53749d;
+color:#53749d;
 }
 
 #wrapper a:hover{
-	text-decoration: underline;
-	color:red;
+text-decoration: underline;
+color:red;
 }
 #wrapper p{
-	 margin: 0.5em;
+margin: 0.5em;
 }
 
 .handling{
-	margin-left:3em;
+margin-left:3em;
 }
 .images{
-	margin: auto;
+margin: auto;
 }
-img{height:15em;
+.images img{height:15em;
 }
 
 iframe{
-	margin: auto;
-	padding:1em;
+margin: auto;
+padding:1em;
 }
 /* ______________________________ Responsive meny ________________________________________ */
 
- @media only screen and (max-width: 975px) {
- }
+@media only screen and (max-width: 975px) {
+}
 
 /* ______________________________________ Medium screen _________________________________________*/
 
 
- @media only screen and (max-width: 975px) and (min-width: 600px){
-	 #wrapper{
-		background-color:blue;
-		width:60%;
+@media only screen and (max-width: 975px) and (min-width: 600px){
+#wrapper{
+background-color:blue;
+width:60%;
 }
 
 
 img{height: 7em;}
 
- }
+}
 /* ______________________________________ Small screen _________________________________________*/
 
 @media only screen and (max-width: 600px) and (min-width: 410px){
-		 #wrapper{
-	width:80%;
-		background-color:grey;
+#wrapper{
+width:80%;
+background-color:grey;
 }
 
 img{height: 5em;}
@@ -260,9 +266,9 @@ img{height: 5em;}
 /* ______________________________________ Smallest screen _________________________________________*/
 
 @media only screen and (max-width: 410px){
-	 #wrapper{
-		width:70%;
-		background-color:pink;
+#wrapper{
+width:70%;
+background-color:pink;
 }
 .images{width:30%;
 }
